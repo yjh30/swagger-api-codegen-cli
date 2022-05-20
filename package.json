@@ -1,0 +1,25 @@
+{
+  "name": "swagger-api-codegen-cli",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": ["swagger","openAPI","codegen"],
+  "bin": {
+    "sac": "bin/sac.js"
+  },
+  "files": ["main", "bin"],
+  "main": "index.js",
+  "scripts": {
+    "test": "node bin/sac.js --config example/config.js",
+    "test:package=oms": "node bin/sac.js --config example/config.js --package oms",
+    "test:package=sem": "node bin/sac.js --config example/config.js --package sem"
+  },
+  "author": "yangjunhua",
+  "homepage": "https://github.com/yjh30/swagger-api-codegen-cli",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "^9.2.0",
+    "shelljs": "^0.8.5",
+    "swagger-typescript-api": "9.3.1"
+  }
+}
