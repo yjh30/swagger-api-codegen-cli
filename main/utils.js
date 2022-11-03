@@ -110,7 +110,7 @@ function checkCodegenConfig(configList) {
 
 /**
  * chainPromise 串行链式Promise函数
- * @param {Array<Promise<any>>} promiseFns 
+ * @param {Array<() => Promise<any>>} promiseFns 
  */
 function chainPromise(promiseFns) {
   return promiseFns.reduce((p, fn) => p.then(fn), Promise.resolve());

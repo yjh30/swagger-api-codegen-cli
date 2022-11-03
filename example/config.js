@@ -13,17 +13,17 @@ module.exports = [
   {
     packageName: 'oms',
     outputDir: 'example/packages/sem/api',
-    swaggerUrl: 'http://localhost:3000/oms.json',
+    swaggerUrl: 'http://localhost:3000/example/static/oms.json',
     generateApiConfig: {
       ...generateApiConfig
     },
   },
-  {
-    packageName: 'sem',
-    outputDir: 'example/packages/oms/api',
-    swaggerUrl: 'http://localhost:3000/sem.json',
-    generateApiConfig: {
-      ...generateApiConfig
-    },
-  }
+  // {
+  //   packageName: 'sem',
+  //   outputDir: 'example/packages/oms/api',
+  //   swaggerUrl: 'http://localhost:3000/sem.json',
+  //   generateApiConfig: {
+  //     ...generateApiConfig
+  //   },
+  // }
 ];
